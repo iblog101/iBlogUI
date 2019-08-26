@@ -1,0 +1,15 @@
+<form [formGroup]="BlogPost" (ngSubmit) = "onSubmit()">
+    <div>
+        <label for="Subject">Subject: </label>
+        <input type="text" id="Subject" maxlength="20" value="Subject" formControlName = "Subject">
+    </div>
+    <br>
+    <div>
+        <label for="Message">Message Body: </label>
+        <textarea id="Message" maxlength="1000" value="MessageBody" formControlName = "MessageBody"></textarea>
+    </div>
+    <br>
+    <div>
+        <input type="submit" id="blogSubmit" value="Post">
+    </div>
+</form>
